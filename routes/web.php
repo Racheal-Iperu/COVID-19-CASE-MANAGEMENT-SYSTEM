@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usercontroller;
+use App\Http\Controllers\fundscontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,9 @@ Route::get('/AddHealthOfficer',function(){
 });
 Route::view('add','addhealthofficer');
 Route::post('add',[usercontroller::class,'adddata']);
+
+Route::get('/Funds',function(){
+    return view('Funds');
+});
+Route::view('plus','Funds');
+Route::post('plus',[fundscontroller::class,'addfund']);
