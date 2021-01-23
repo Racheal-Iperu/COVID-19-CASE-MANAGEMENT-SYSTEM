@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class generalhealthofficer extends Model
 {
     use HasFactory;
-    public $timestamps=false;
+    //prevents recording time created
+   // public $timestamps=false;
 }
