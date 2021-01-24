@@ -32,7 +32,7 @@
     <label for="CONTACT">phone</label>
     <input type="text" name="PHONE"><br><br>
     <button type="submit">submit</button>
-    <button type="submit">cancel</button>
+    <button type="reset">cancel</button>
     </form>
 </body>
 </html>

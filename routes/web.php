@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usercontroller;
 use App\Http\Controllers\fundscontroller;
-
+use App\Http\Controllers\returnfundscontroller;
+use App\Http\Controllers\healthofficercontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -73,3 +74,9 @@ Route::get('/records',function(){
 Route::get('/reports',function(){
     return view('reports');
 });
+
+//for-returning-funds
+route::get('availablefunds',[returnfundscontroller::class,'show']);
+
+//for assigning hospital automatically
+Route::get('hospital',[healthofficercontroller::class,'assign']);

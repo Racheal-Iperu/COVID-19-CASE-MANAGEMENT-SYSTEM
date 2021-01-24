@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/pages.css')}}">
 </head>
 <body>
+<button onclick="window.location='availablefunds'">present</button>
 <div class="sidenav">
     <p style="background-color:white;">navigation</p>
     <a href="#">Add Health Officer</a>
@@ -26,10 +27,10 @@
     <input type="text" name="donor"><br><br>
     
     <label for="date">Date</label>
-    <input type="text" name="date"><br><br>
+    <input type="text" name="date" placeholder="yyyy-mm-dd"><br><br>
     
     <button type="submit">submit</button>
-    <button type="submit">cancel</button>
+    <button type="reset">cancel</button>
     </form>
 </body>
 </html>
